@@ -17,11 +17,7 @@ class Solution(object):
         
         return not stack  # Return True if the stack is empty (all brackets matched)
 
-# Example usage
-sol = Solution()
-print(sol.isValid("()"))      # Output: True
-print(sol.isValid("()[]{}"))  # Output: True
-print(sol.isValid("(]"))      # Output: False
+
 
 
 
