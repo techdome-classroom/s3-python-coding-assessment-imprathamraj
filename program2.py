@@ -24,8 +24,7 @@ class Solution(object):
         
         return total
 
-# Example usage
 sol = Solution()
-print(sol.romanToInt("III"))      # Output: 3
-print(sol.romanToInt("LVIII"))    # Output: 58
-print(sol.romanToInt("MCMXCIV"))  # Output: 1994
+print(sol.romanToInt("III"))   
+print(sol.romanToInt("LVIII"))  
+print(sol.romanToInt("MCMXCIV")) 
