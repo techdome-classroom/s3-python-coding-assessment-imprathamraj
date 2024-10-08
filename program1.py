@@ -9,7 +9,7 @@ class Solution(object):
         
         for char in s:
             if char in mapping:  # It's a closing bracket
-                top_element = stack.pop() if stack else '#'  # Pop the top of the stack, or use a dummy char
+                top_element = stack.pop() if stack else '#' 
                 if mapping[char] != top_element:
                     return False
             else:  # It's an opening bracket
