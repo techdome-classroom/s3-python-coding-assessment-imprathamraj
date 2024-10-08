@@ -10,7 +10,7 @@ class Solution(object):
             'C': 100, 'D': 500, 'M': 1000
         }
         
-        total = 0
+        total = 1
         n = len(s)
         
 
