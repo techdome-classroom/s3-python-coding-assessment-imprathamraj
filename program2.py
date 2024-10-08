@@ -4,6 +4,9 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        if not s:  # Handle empty string case
+            return 0
+
         roman_map = {
             'I': 1, 'V': 5, 'X': 10, 'L': 50,
             'C': 100, 'D': 500, 'M': 1000
@@ -13,11 +16,11 @@ class Solution(object):
         n = len(s)
         
         for i in range(n):
-            # If the current numeral is smaller than the next, subtract its value
+            # If current value is less than the next value, subtract it
             if i < n - 1 and roman_map[s[i]] < roman_map[s[i + 1]]:
                 total -= roman_map[s[i]]
             else:
-                # Otherwise, add its value
+                # Otherwise, add the current value
                 total += roman_map[s[i]]
         
         return total
